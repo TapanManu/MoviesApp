@@ -51,7 +51,7 @@
 	}
 
 	div{
-        background : #ffffff;
+        background : rgb(235, 235, 243);
         margin-left:20px;
         margin-right:20px;
 		border: 1px solid rgb(226, 218, 218);
