@@ -1,6 +1,20 @@
 <script>
 	import Nav from './Nav.svelte';
-	import Container from './Container.svelte';
+	import Card from './Card.svelte';
+	
+    const movielist = [{
+        moviename:'Interstellar',
+        rating:'9.2',
+        image:'images/interstellar.jpeg'
+    },{
+		moviename:'The Dark Knight',
+        rating:'9.0',
+        image:'images/Dark_Knight.jpg'
+	},{
+		moviename:'Spiderman: Far from Home',
+        rating:'7.5',
+        image:'images/spiderman.jpeg'
+	}];
 	export let name;
 </script>
 
@@ -8,7 +22,11 @@
 
 
 <h2>Movies</h2>
-<Container name={name}/>
+<div class = "movie">
+	{#each movielist as {moviename,rating,image},i}
+		<Card {...movielist[i]}/>
+	{/each}
+</div>
 
 
 <style>
@@ -31,6 +49,14 @@
 		color:black;
 		margin-left: 50px;
 	}
+
+	div{
+        background : #ffffff;
+        margin-left:20px;
+        margin-right:20px;
+		border: 1px solid rgb(226, 218, 218);
+		border-radius:10px;
+    }
 
 	@media (min-width: 640px) {
 		main {

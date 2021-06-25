@@ -4,9 +4,9 @@
 
 <div>
 	<ul>
-		<li>Home</li>
-		<li>Movies</li>
-		<li>{name}</li>
+		<li><a>Home</a></li>
+		<li><a>Movies</a></li>
+		<li><a>{name}</a></li>
 	</ul>
 </div>
 
@@ -17,6 +17,15 @@
 	}
 	li{
 		padding:10px;
+	}
+	a{
+		color:purple;
+		text-decoration: none;
+	}
+	a:hover{
+		color:blue;
+		transition:0.3s;
+		cursor:pointer;
 	}
 
 </style>
