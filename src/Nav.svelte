@@ -4,9 +4,9 @@
 
 <div>
 	<ul>
-		<li><a>Home</a></li>
-		<li><a>Movies</a></li>
-		<li><a>{name}</a></li>
+		<li><a href ="/">Home</a></li>
+		<li><a href="/movies">Movies</a></li>
+		<li><a href="/about">{name}</a></li>
 	</ul>
 </div>
 
