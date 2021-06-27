@@ -13,7 +13,6 @@
         next();
       },
       () => {
-          router.redirect("/");
           page = route.component;
       }
     );

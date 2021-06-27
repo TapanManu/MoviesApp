@@ -1,0 +1,16 @@
+[{
+    "id":"1",
+    "moviename":"Interstellar",
+    "rating":"9.2",
+    "image":"images/interstellar.jpeg"
+},{
+    "id":"2",
+    "moviename":"The Dark Knight",
+    "rating":"9.0",
+    "image":"images/Dark_Knight.jpg"
+},{
+    "id":"3",
+    "moviename":"Spiderman: Far from Home",
+    "rating":"7.5",
+    "image":"images/spiderman.jpeg"
+}]

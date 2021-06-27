@@ -8,7 +8,7 @@ export default [
 		component: Blog
 	},
 	{
-		path: '/blog/:id',
+		path: '/movies/:id',
 		component: Movie
 	},
 	{

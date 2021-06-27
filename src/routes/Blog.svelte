@@ -1,27 +1,24 @@
 <script>
 	
 	import Card from './Card.svelte';
-	
-    const movielist = [{
-        moviename:'Interstellar',
-        rating:'9.2',
-        image:'images/interstellar.jpeg'
-    },{
-		moviename:'The Dark Knight',
-        rating:'9.0',
-        image:'images/Dark_Knight.jpg'
-	},{
-		moviename:'Spiderman: Far from Home',
-        rating:'7.5',
-        image:'images/spiderman.jpeg'
-	}];
+    import Movie from './Movie.svelte';
+	import { onMount } from "svelte";
+import App from '../App.svelte';
+
+    let movielist = [];
+    onMount(async () => {
+        const response = await fetch("movies.json");
+        movielist = await response.json();
+    });
+   
 	
 </script>
 
 <h2>Gallery</h2>
 <div class = "movie">
 	{#each movielist as {moviename,rating,image},i}
-		<a href="#home"><Card {...movielist[i]}/></a>
+		<a href="/movies/{movielist[i].id}"><Card {...movielist[i]}/></a>
+        
 	{/each}
 </div>
 

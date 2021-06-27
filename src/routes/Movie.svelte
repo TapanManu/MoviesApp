@@ -1,9 +1,11 @@
 <script>
-    export let name;
-    export let rating;
-    export let image;
+    import routes from '../routes.js';
+    export let id;
+    $: blog = routes.find(p => p.id == id);
+    
+    
 </script>
 
 <div class="movie-desc">
-    
+    <h1>{blog}</h1>
 </div>
