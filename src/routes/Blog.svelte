@@ -1,9 +1,7 @@
 <script>
-	
 	import Card from './Card.svelte';
-    import Movie from './Movie.svelte';
 	import { onMount } from "svelte";
-import App from '../App.svelte';
+	import App from '../App.svelte';
 
     let movielist = [];
     onMount(async () => {

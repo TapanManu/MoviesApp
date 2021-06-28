@@ -13,7 +13,12 @@
         next();
       },
       () => {
+		if (route.auth && !user) {
+          router.redirect("/");
+        } 
+		else {
           page = route.component;
+        }
       }
     );
   });

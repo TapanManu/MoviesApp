@@ -2,13 +2,13 @@
     export let name;
 </script>
 
-<div>
+<nav>
 	<ul>
 		<li><a href ="/">Home</a></li>
-		<li><a href="/movies">Movies</a></li>
+		<li><a href="/">Movies</a></li>
 		<li><a href="/about">{name}</a></li>
 	</ul>
-</div>
+</nav>
 
 <style>
     ul{
