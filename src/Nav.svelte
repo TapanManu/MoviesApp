@@ -4,9 +4,8 @@
 
 <nav>
 	<ul>
-		<li><a href ="/">Home</a></li>
-		<li><a href="/">Movies</a></li>
-		<li><a href="/about">{name}</a></li>
+		<li><a href ="/"><i class="fa fa-home"></i></a></li>
+		<li><a href="/about"><i class="fa fa-user"></i>  {name}</a></li>
 	</ul>
 </nav>
 
