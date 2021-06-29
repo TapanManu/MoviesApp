@@ -11,10 +11,11 @@
     });
     //JSON.stringify(movielist[params.id-1])
 </script>
-
 <div class="movie-desc">
+    
     <!-- let it be like this for dummy data , but not recommended for real world datas-->
     {#each movielist as {id,moviename,rating,image,director,desc},i}
+        
         {#if i === params.id-1}
             <img src="../{image}" alt="{moviename}"/>
             <div class="desc">
@@ -55,6 +56,6 @@
         display:block;
         margin-left:30px;
         text-align:left;
-        width:400px;
+        width:500px;
     }
 </style>
