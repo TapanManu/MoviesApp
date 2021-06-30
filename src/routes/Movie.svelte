@@ -41,7 +41,7 @@
 <style>
     div{
         display:flex;
-        background-color: rgb(246, 248, 248);
+        background-color:rgb(246, 248, 248);
         border-radius:10px;
     }
     img{

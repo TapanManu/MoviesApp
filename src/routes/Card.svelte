@@ -2,6 +2,8 @@
     export let moviename;
     export let rating;
     export let image;
+
+    
 </script>
 
 <div class="card">
@@ -9,6 +11,7 @@
     <div class="sub">
         <h3>{moviename}</h3>
         <p>Rating:{rating}/10</p>
+        
     </div>
 </div>
 
